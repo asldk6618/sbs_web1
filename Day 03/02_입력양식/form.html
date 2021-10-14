@@ -66,13 +66,30 @@
 	  -->
 	 
 	 <!-- TODO 여기에 작성해보세요. -->
-	 
+	 <form action="input.jsp" method="get">
+		 <input type="text" name="input1"> <!--칸이름-->
+		 <input type="text" name="input2"> <!--칸이름(어떻게 전송되는지)-->
+		 <input type="submit" name="전송">
+	 </form>
 	 
 	 <hr>
 	 
 	 <!-- TODO 여기에 작성해보세요. -->
-	 
-	 
+	 <form action="input.jsp" method="post">
+		ID   :  <input type="text" name="ld" /> <br>
+		email   :  <input type="email" name="email" /> <br>
+	    url   :  <input type="url" name="url" /> <br>
+		tel   :<input type="tel" name="tel" /> <br>
+		color   :<input type="color" name="color" /> <br>
+
+		radio(성별)   :
+		                <label for="male"> 남자 </label>
+						<input type="radio" name="gender" value="male" id="male">
+
+		                <label for="female"> 여자 </label>
+						<input type="radio" name="gender" value="female" id="female">
+						
+
 </body>
 </html>
 
