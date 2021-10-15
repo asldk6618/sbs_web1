@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Html Layout </title>
+    <style>
+      #header {
+               background-color: lightgray;
+               height: 100px;
+      }
+
+      #nav {
+          background-color: lightskyblue; <!-- 칸색깔- ->
+          color : white;       <!-- 글씨색깔-->
+          width: 200px;       
+          height: 300px;
+          float: left;         <!-- 글씨위치-->
+          padding: 10px;       <!-- 내부여백-->
+      }
+
+      #section {
+          background-color: wheat;
+          width: 400px;
+          height: 300px;
+          text-align: center;
+          float: left;
+          padding: 10px;      
+      }
+
+      #footer {
+          background-color: #ffcc0f;
+          height: 100px;
+          clear: both;   
+      }
+
+      #header, #nav, #section, #footer {
+          text-align: center;
+      }
+
+      #header, #footer { line-height: 100px;
+      }
+    </style>
+</head>
+<body>
+    
+      <h1>div요소를 이용한 레이아웃</h1>
+     <div id="header">
+       <h2>HEADER 영역</h2>
+    </div>
+     <div id="nav">
+       <h2>NAV 영역</h2>
+    </div>
+     <div id="section">
+        <h2>SECTION 영역</h2>
+    </div>
+     <div id="footer">
+        <h2>FOOTER 영역</h2>
+    </div>
+
+</body>
+</html>
