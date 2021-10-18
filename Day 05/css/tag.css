@@ -3,34 +3,61 @@
 
 header {
 	/* TODO 여기에 작성해보세요:) */
+	height: 85px;
+	background-color: aquamarine;
+	padding: 10px;
 }
 
 header h1 {
-	/* TODO 여기에 작성해보세요:) */
+	/* TODO 여기에 작성해보세요: rem : 배수) */
+	float: left;
+	font-size: 1.8rem;
 }
 
 header ul {
 	/* TODO 여기에 작성해보세요:) */
+	float: right;
 }
 
 header ul li {
 	/* TODO 여기에 작성해보세요:) */
-}
+	list-style:  none;
+	display: inline-block;
+	}
+	
+ /* 텍스트 데코레이션 : 글씨밑줄등등*/
+	header ul li a{
+		text-decoration: none;
+		color: black;
+	}
 
 article {
-	/* TODO 여기에 작성해보세요:) */
+	/* TODO 여기에 작성해보세요:) min-height : 최소높이*/
+	min-height: 500px;
 }
 
 article section {
 	/* TODO 여기에 작성해보세요:) */
+	float: left;
 }
 
 article aside {
 	/* TODO 여기에 작성해보세요:) */
+	float: right;
+	width: 200px;
+	background-color: #c0dce7;
+	min-height: 500px;
+	padding: 10px 20px;  /*첫번째 px: 상하, 두번째px: 좌우/4개하면 : 북동남서*/
+	box-sizing: border-box;	
 }
+
 
 footer {
 	/* TODO 여기에 작성해보세요:) */
+	height: 100px;
+	background-color: #fedd31;
+	padding: 20px;
+	text-align: center;
 }
 
 
