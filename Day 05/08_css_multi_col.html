@@ -4,9 +4,9 @@
     <style>
         .poet {
             columns: 200px 3;
-            /* column-count: 3; */
+            /* column-count: 3; 몇개의 덩어리로 쪼갤것인가*/
             /* column-width: 200px; */
-            column-gap: 50px;
+            column-gap: 50px; /*단과 단사이의 간격*/
             column-rule: 1px solid lightblue;
             /* column-rule-width: 1px; */
             /* column-rule-style: solid; */
@@ -17,7 +17,7 @@
             border: 1px solid gray;
         }
         h2{
-            column-span: all;
+            column-span: all; /*그 단(줄)에서 어느정도 영역을 차지*/
             text-align: center;
             margin: 40px auto;
         }
