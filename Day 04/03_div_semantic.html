@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Lay out - SEMANTIC태그 </title>
+</head>
+
+<style>
+/* 헤더 */
+        header {
+               background-color: gray;
+               padding: 30px;
+               text-align: center;
+               font-size: 30px;
+               color : white
+        }
+        nav {
+            float: left;
+            width: 30%;
+            height: 300px;
+            background-color: #ccc;
+            padding : 20px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        article {
+            float: left;
+            padding: 20px;
+            width: 70%;
+            height: 300px;
+            background-color: #f1f1f1;
+        }
+
+     section:after {
+          content : "";
+          display : table;
+          clear: both;
+          /*앞의 요소에서 사용한 float 영향을 없앰*/
+     }
+
+     footer {
+          background-color : #777
+          padding : 10px
+          text-align : 
+     }
+
+     @media ( max-width: 600px) {
+         nav, article {
+              width : 100px ;
+              height auto ;
+         }
+     }
+
+</style>
+
+<body>
+     <header>
+          <h2><HEADER></h2>
+     </header>
+
+     <section>
+          <nav>
+               <ul>
+                    <li><a href="#">공지사항</a></li>
+                    <li><a href="#">게시판</a></li>
+                    <li><a href="#">자료실</a></li>
+               </ul>
+          </nav>
+     </section>
+
+     <article>
+          <h1>글 제목</h1>
+          <p> 아이오우이이이이이잉이 오오오오오오</p>     
+          <p>샤샤ㅑㅅ샤샤ㅑㅅ샤샤샤샤샤샤</p>
+     </article>
+    
+     <footer>
+          <p>FOOTER</p>
+     </footer>
+
+</body>
+</html>

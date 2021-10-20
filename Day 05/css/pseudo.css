@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+
+h1 {
+	font-size: 2.5rem;
+	color: #25a9bd;
+}
+
+section {
+	padding: 10px;
+}
+
+
+/* TODO 여기에 작성해보세요:) */
+section:first-of-type { color: #bc1212; }
+
+
+/* TODO 여기에 작성해보세요:) 세번째 문단 첫글자*/
+section:last-of-type:first-letter {
+	font-size: 2.4rem;
+	float: left;
+	padding: 0 2px;
+	margin:  -1px 3px 0 0;
+	font-weight:  bold;
+	color: #f00;
+}
+
+/* TODO 여기에 작성해보세요:) */
+section em {
+	display: block;
+	text-align: center;
+	padding: 15px;
+	position: relative;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: inherit; /*부모요소에 있는 거를 그대로 물려받음*/
+}
+
+
+/* TODO 여기에 작성해보세요:) */
+section em::before {
+	/* em부분에 :before적용 "(따옴표) 효과 */
+	content: "\"";
+	padding-right: 0.5em;  /*em 부모요소에 비례함*/
+
+}
+
+
+/* TODO 여기에 작성해보세요:) */
+section em::after {
+	/* em부분에 :after적용 "(따옴표) 효과 */
+	content: "\"";
+	padding-left: 0.5em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
