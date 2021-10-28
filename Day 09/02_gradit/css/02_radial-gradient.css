@@ -1,10 +1,25 @@
 
 .box {
-    height: 200px;
-    margin: 50px;
+   width: 900px;
+   height: 600px;
+   margin: 50px auto;
 }
 
-.bottom { background-image: linear-gradient(to bottom, red, orange, yellow);}
-.top { background-image: linear-gradient(to top, red, orange, yellow);}
-.left { background-image: linear-gradient(to left, red, orange, yellow);}
-.right { background-image: linear-gradient(to right, red, orange, yellow);}
+/*모양*/
+.ellipse { background: radial-gradient(ellipse, #8a3ab9 0%, white 50%, #b53471 100%);}
+.circle { background: radial-gradient(circle, blue 30%, green 60%, yellow 80%, black 95%);}
+
+/*사이즈*/
+.closest-corner { background: radial-gradient(closest-corner at 60% 55%, blue, green, yellow, black);}
+.closest-side { background: radial-gradient(closest-side at 60% 55%, blue, green, yellow, black);}
+.farthest-corner { background: radial-gradient(farthest-corner at 60% 55%, blue, green, yellow, black);}
+.farthest-side { background: radial-gradient(farthest-side at 60% 55%, blue, green, yellow, black);}
+
+/* 누적 그레디언트*/
+.stack-radial {
+    background : 
+            radial-gradient(circle at 50% 0, rgba(255,0,0,0.5), rgba(255,0,0,0) 70%),
+            radial-gradient(circle at 6% 75%, rgba(0,0,255,0.5), rgba(255,0,0,0) 70%),
+            radial-gradient(circle at 93% 75%, rgba(0,255,0,0.5), rgba(255,0,0,0) 70%),
+            ;
+}
