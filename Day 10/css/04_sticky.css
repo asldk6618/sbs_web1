@@ -1,8 +1,7 @@
-
 .container {
     position: relative;
     width: 1200px;
-    height: 800px;
+    height: 2000px;
     border: 5px dashed orange;
     margin: 0 auto;
 }
@@ -12,33 +11,35 @@
     width: 200px;
     height: 200px;
     line-height: 200;
+    border-radius: 10%;
     box-sizing: border-box;
     text-align: center;
     font-size: 48px;
 }
 
-.containeer .relative {
-    position: relative;
+.containeer .sticky {
+    position: -webkit-sticky;
+    position: sticky;
     border: 3px solid black;
 }
 
 /*보조박스*/
-.container .absolute {
+.container .base {
     position: absolute;
     border: 3px dasged #ddd;
     z-index: -1;
     color: #ddd;
 }
 
-/*relative를 적용한 박스위치*/
-.first { left: 100px;}
-.second { right: 100px;}
-.third { top: 100px; left: 200px;}
-.fourth { bottom: 100px; right: 200px;}
+/*absolute를 적용한 박스위치*/
+.first { left: 0; top:0;}
+.second { right: 0; top:0;}
+.third { left: 0; bottom:0;}
+.fourth { right : 0; bottom: 0;}
 
 /* 보조박스위치*/
 .fifth { top: 0; left: 500px;}
 .sixth { top: 200px; left: 500px;}
-.seven { top: 400px;left: 500px;}
-.eight { top: 600px; left: 500px;
+.seventh { top: 400px;left: 500px;}
+.eighth { top: 600px; left: 500px;
 }
