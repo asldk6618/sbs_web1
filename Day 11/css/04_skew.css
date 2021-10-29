@@ -1,0 +1,50 @@
+
+.container {
+    position: relative;
+    margin: 0 auto;
+    width: 1400px;
+    height: 500px;
+    bottom: 3px dashed orange;
+    box-sizing: border-box;
+}
+
+.inner { text-align: center;}
+
+.box {
+    display: inline-block;
+    position: relative;
+    width: 300px;
+    height: 400px;
+    bottom: 1px solid #ddd;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.item {
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    background-color: royalblue;
+    box-sizing: border-box;
+    transition: 1s; /*변형되는 시간(움직임이 보임)*/
+}
+
+.absolute {
+    position: absolute;
+    background-color: white;
+    bottom: 2px dashed gray;
+    top: 30px;
+    left: 75px;
+    z-index: -1;
+}
+
+.skew1:hover { 
+    transform: skew(45deg,45deg); 
+}
+.skew2:hover {
+    transform: skewX(45deg);
+}
+.skew3:hover {
+    transform: skewY(45deg);
+}
+
