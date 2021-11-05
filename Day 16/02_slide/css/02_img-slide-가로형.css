@@ -1,0 +1,32 @@
+
+section.slide { 
+    width: 100%; /*이미지 하나 가로가 1200, 3장넣을거니 3600*/
+    height: 600px; 
+    position: relative;
+    overflow: hidden;
+}
+
+section.slide ul {
+    list-style: none;
+    position: absolute;
+    animation-name: slide;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes slide {
+    0% {top: 0;}
+    33% {top: -600px;}
+    66% {top: -1200px;}
+    100% {top: 0;}
+}
+section.slide ul li {
+    /*float: left;*/
+    width: 1200px;
+    height: 600px;
+    box-sizing: border-box;
+}
+section.slide ul li img {
+    width: 100%;
+    height: 100%;
+}
